@@ -1,11 +1,23 @@
 * {
     color: #fff;
-    background: #000;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #000;
+    margin: 0;
 }
 
 h1 {
     font-size: 2.5em;
+}
+
+#logo {
+    display: none;
+}
+
+#hider {
+    display: none;
 }
 
 #personName {
@@ -14,6 +26,7 @@ h1 {
 
 img {
     width: 100%;
+    height: 20em;
 }
 
 section {
@@ -21,56 +34,62 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url("../img/SQ_NSwitchDS_Cluedo.jpeg") center no-repeat;
+    height: 100vh;
 }
 
-section > h1 {
+section > article:last-of-type >  h1 {
     margin: 2em 0;
     font-size: 2em;
 }
 
 section > article:first-of-type  {
     text-align: center;
+    
 }
 
+
 section > article:first-of-type > button {
-    padding: 1em;
+    padding: 2em;
     border: 2px solid #fff;
+    background: #000;
     cursor: pointer;
     letter-spacing: 5px;
 }
 
 section > article:first-of-type > button:active {
-    padding: 1em;
+    padding: 2em;
     border: 2px solid #000;
     background: #fff;
     color: #000;
     cursor: pointer;
 }
 
-section > article:last-of-type {
+section > article:last-of-type > div {
     display: flex;
+    justify-content: center;
     flex-direction: row;
 }
 
-section > article > div {
+section > article:nth-of-type(2) > div > div {
     width: 30em;
     text-align: center;
 }
 
-section > article:nth-of-type(2) > div:nth-of-type(1) {
+section > article:nth-of-type(2) > div > div:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-section > article:nth-of-type(2) > div:nth-of-type(1) > div {
+section > article:nth-of-type(2) > div > div:nth-of-type(1) > div {
     border: 2px solid #fff;
     padding: 0em 5em;
     width: 10em;
     margin-bottom: 2em;
 }
 
-section > article:nth-of-type(2) > div:nth-of-type(2) {
+section > article:nth-of-type(2) > div > div:nth-of-type(2) {
     border: 2px solid #fff;
 }

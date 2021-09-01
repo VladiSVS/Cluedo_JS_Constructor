@@ -29,7 +29,6 @@ let personArray = [mrGreen, drOrchid, profPlum, missScarlet, mrsPeacock, mrMusta
 randomCard = () => {
     let randomNum = Math.floor(Math.random() * personArray.length)
     let result = personArray[randomNum]
-
     return result
 }
 
@@ -42,6 +41,7 @@ class Weapons {
         document.getElementById("getWeapons").innerHTML =
             `<h2>${this.weapon}</h2>
              <p>Weight: ${this.weight}</p>`
+        document.getElementById("showWeapon").innerHTML = `${this.weapon}`
     }
 }
 
@@ -60,7 +60,6 @@ let weaponsArray = [rope, knife, candlestick, dumbbell, poison, axe, bat, trophy
 randomWeapons = () => {
     let randomNum = Math.floor(Math.random() * weaponsArray.length)
     let result = weaponsArray[randomNum]
-
     return result
 }
 
@@ -71,6 +70,7 @@ class Rooms {
     getRooms() {
         document.getElementById("getRooms").innerHTML =
             `<h2>${this.room}</h2>`
+        document.getElementById("showRoom").innerHTML = `${this.room}`
     }
 }
 
@@ -94,7 +94,6 @@ let roomsArray = [diningRoom, conservatory, kitchen, study, library, billiard, l
 randomRooms = () => {
     let randomNum = Math.floor(Math.random() * roomsArray.length)
     let result = roomsArray[randomNum]
-
     return result
 }
 
@@ -114,5 +113,10 @@ function start() {
     let randomRoom = randomRooms()
     console.log(randomRoom)
     randomRoom.getRooms()
+
+    document.getElementById("cluedo").style.background = "none"
+    document.getElementById("cluedo").style.height = "100%"
+    document.getElementById("logo").style.display = "block"
+    document.getElementById("hider").style.display = "block"
 }
 
