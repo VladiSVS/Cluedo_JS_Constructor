@@ -55,7 +55,6 @@ let bat = new Weapons("bat", 13)
 let trophy = new Weapons("trophy", 25)
 let pistol = new Weapons("pistol", 20)
 
-console.log("----------------------------------------------------------------")
 
 let weaponsArray = [rope, knife, candlestick, dumbbell, poison, axe, bat, trophy, pistol]
 randomWeapons = () => {
